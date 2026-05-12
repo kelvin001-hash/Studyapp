@@ -1,0 +1,29 @@
+<resources xmlns:android="http://schemas.android.com/apk/res/android">
+    <!-- Base application theme. -->
+    <style name="Theme.Studyapp" parent="@style/Theme.Material3.DayNight.NoActionBar">
+        <item name="android:statusBarColor">@android:color/transparent</item>
+        <item name="android:navigationBarColor">@android:color/transparent</item>
+    </style>
+
+    <!-- Splash Screen Theme -->
+    <style name="Theme.App.Starting" parent="Theme.SplashScreen">
+        <!-- Match login screen deep emerald background -->
+        <item name="windowSplashScreenBackground">@color/brand_green</item>
+
+        <!-- Center icon -->
+        <item name="windowSplashScreenAnimatedIcon">@drawable/studyapp</item>
+
+        <!-- Mimic the circular background from login screen -->
+        <item name="windowSplashScreenIconBackgroundColor">#33FFFFFF</item> <!-- 20% White opacity -->
+
+        <!-- Duration of the splash screen icon animation (if any) -->
+        <item name="windowSplashScreenAnimationDuration">1000</item>
+
+        <!-- Theme to use after the splash screen -->
+        <item name="postSplashScreenTheme">@style/Theme.Studyapp</item>
+
+        <!-- Ensure status bar icons are light on dark background -->
+        <item name="android:windowLightStatusBar">false</item>
+        <item name="android:windowLightNavigationBar">false</item>
+    </style>
+</resources>
